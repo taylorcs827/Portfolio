@@ -1,5 +1,6 @@
 import React from 'react';
-import { projects } from '../js/Data.js';
+import { Link } from 'react-router-dom'; // Import Link for navigation
+import { projects } from '../js/Data.js'; // Assuming your project data is here
 
 export default function Work() {
     return (
@@ -8,10 +9,10 @@ export default function Work() {
             <p className="section__subtitle section__subtitle--work">A selection of my range of work</p>
             
             <div className="portfolio">
-                {Object.values(projects).map((project, index) => (
-                    <a key={index} href={`portfolio-item.html?id=${index + 1}`} className="portfolio__item">
-                        <img src={project.img} alt={project.title} className="portfolio__img" />
-                    </a>
+                {Object.keys(projects).map((id) => (
+                    <Link key={id} to={`/work/${id}`} className="portfolio__item">
+                        <img src={projects[id].img} alt={projects[id].title} className="portfolio__img" />
+                    </Link>
                 ))}
             </div>
         </section>

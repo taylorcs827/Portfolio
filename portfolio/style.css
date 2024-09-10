@@ -213,11 +213,6 @@ header {
     opacity: 0;
 }
 
-
-
-
-
-
 .hamburger {
     display: block;
     position: relative;
@@ -345,40 +340,10 @@ header {
 }
 
 
-.about-me {
+.about-me,
+.section__details {
     max-width: 1000px;
     margin: 0 auto;
-}
-
-.about-me__img {
-    box-shadow: var(--bs);
-}
-
-@media (min-width: 600px) {
-
-     .about-me {
-        display: flex;
-        flex-direction: column;
-     }
-    .section__title--about {
-        grid-area: title;
-    }
-    
-    .section__subtitle--about {
-        grid-column: 1 / -1;
-        grid-row: 2;
-        position: relative;
-        left: -1em;
-        width: calc(100% + 2em);
-        padding-left: 1em;
-        padding-right: calc(200px + 4em);
-    }
-    
-    .about-me__img {
-        grid-area: img;
-        position: relative;
-        z-index: 2;
-    }
 }
 
 /* My Work */
@@ -489,15 +454,15 @@ header {
 }
 
 
-/* Individual portfolio item styles */
+/* Project Detail item styles */
 
-.portfolio-item-individual {
+.project-detail {
     padding: 0 2em 2em;
     max-width: 1000px;
     margin: 0 auto;
 }
 
-.portfolio-item-individual p {
+.project-detail p {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;

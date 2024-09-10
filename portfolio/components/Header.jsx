@@ -1,53 +1,62 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState } from "react";
+import { HashLink } from 'react-router-hash-link'; // Import HashLink for smooth scrolling
 
 export default function Header() {
+    const [isNavOpen, setIsNavOpen] = useState(false);
+
+    const handleNavToggle = () => {
+        setIsNavOpen(!isNavOpen);
+    };
 
     return (
-        <header>
-            {/* Hamburger button for mobile navigation */}
-            <button className="nav-toggle" aria-label="toggle navigation">
+        <header className={isNavOpen ? "nav-open" : ""}>
+            {/* Hamburger button */}
+            <button 
+                className="nav-toggle" 
+                aria-label="toggle navigation" 
+                onClick={handleNavToggle}
+            >
                 <span className="hamburger"></span>
             </button>
 
-            {/* Main navigation */}
+            {/* Navigation */}
             <nav className="nav">
                 <ul className="nav__list">
                     <li className="nav__item">
-                        <NavLink 
-                            to="/home" 
+                        <HashLink 
+                            smooth to="/#intro" 
                             className="nav__link" 
-                            activeClassName="active" // Optional, for active state styling
+                            onClick={() => setIsNavOpen(false)}
                         >
                             Home
-                        </NavLink>
+                        </HashLink>
                     </li>
                     <li className="nav__item">
-                        <NavLink 
-                            to="/services" 
-                            className="nav__link"
-                            activeClassName="active"
+                        <HashLink 
+                            smooth to="/#services" 
+                            className="nav__link" 
+                            onClick={() => setIsNavOpen(false)}
                         >
                             My Services
-                        </NavLink>
+                        </HashLink>
                     </li>
                     <li className="nav__item">
-                        <NavLink 
-                            to="/about" 
+                        <HashLink 
+                            smooth to="/#about" 
                             className="nav__link" 
-                            activeClassName="active"
+                            onClick={() => setIsNavOpen(false)}
                         >
-                            About me
-                        </NavLink>
+                            About Me
+                        </HashLink>
                     </li>
                     <li className="nav__item">
-                        <NavLink 
-                            to="/work" 
-                            className="nav__link"
-                            activeClassName="active"
+                        <HashLink 
+                            smooth to="/#work" 
+                            className="nav__link" 
+                            onClick={() => setIsNavOpen(false)}
                         >
                             My Work
-                        </NavLink>
+                        </HashLink>
                     </li>
                 </ul>
             </nav>
