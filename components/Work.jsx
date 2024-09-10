@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link for navigation
-import { projects } from '../js/Data.js'; // Assuming your project data is here
+import { projects } from '../js/data.js'; // Assuming your project data is here
 
 export default function Work() {
     return (
