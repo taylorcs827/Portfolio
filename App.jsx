@@ -1,14 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from '/pages/Home';
-import ProjectDetail from '/pages/ProjectDetail';
+import Project from '/pages/Project';
 
 function App() {
     return (
         <Router>
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/work/:id" element={<ProjectDetail />} /> {/* This must match the URL structure */}
+                <Route path="/work/:id" element={<Project />} /> {/* This must match the URL structure */}
             </Routes>
         </Router>
     );

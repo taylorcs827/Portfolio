@@ -255,6 +255,7 @@ header {
 
 .section__subtitle--intro {
     display: inline-block;
+    margin-top: 2.5em;
 }
 
 @media (min-width: 600px) {
@@ -361,7 +362,7 @@ header {
 }
 
 .portfolio__item {
-    background: var(--clr-gray);
+    
     overflow: hidden;
     display: flex; 
     align-items: center;
@@ -370,7 +371,7 @@ header {
 }
 
 .portfolio__img {
-    width: 85%; 
+    width: 100%; 
     height: 100%; 
     object-fit: cover; 
     transition: 
@@ -498,6 +499,7 @@ header {
 
 /* Media query to keep link behavior responsive */
 @media (max-width: 600px) {
+    .section__subtitle section__subtitle--intro
     .details-link-container {
         text-align: left; /* This will ensure alignment is consistent */
     }

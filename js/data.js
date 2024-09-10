@@ -38,7 +38,7 @@ export const projects = {
     },
     5: {
         title: "Rock Paper ",
-        subtitle: "Scissors Game",
+        subtitle: "Scissors",
         img: "/img/rockpaperscissors.jpeg",
         imgDetails: "/img/rockpaperscissors_detail.jpeg",
         descriptionIntro: "JavaScript Based Game",
