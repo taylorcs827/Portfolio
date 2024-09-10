@@ -2,8 +2,8 @@ export const projects = {
     1: {
         title: "Van Life",
         subtitle: "AirBnb Clone",
-        img: "img/van_life.jpeg",
-        imgDetails: "img/van_life_detail.png",
+        img: "/img/van_life.jpeg",
+        imgDetails: "/img/van_life_detail.png",
         descriptionIntro: "React Router & Database",
         descriptionDetails: "This React application is designed as a van rental platform reminiscent of Airbnb. It features a structured routing system using React Router. The main sections include a Home Page for general information, an About Page detailing the platform, and a Vans Page that lists available vans for rent. Each van has a Van Detail Page with in-depth information. Users can access a Login Page to manage their accounts.",
         html: "https://taylorcsvanlife.netlify.app"
@@ -11,8 +11,8 @@ export const projects = {
     2: {
         title: "Designo",
         subtitle: "Web Design",
-        img: "img/designo.jpeg",
-        imgDetails: "img/designo_details.jpg",
+        img: "/img/designo.jpeg",
+        imgDetails: "/img/designo_details.jpg",
         descriptionIntro: "Multi-page website design",
         descriptionDetails: "A multi-page website for a fictional web design company. The website is a responsive design that adapts to different screen sizes, ensuring an optimal layout on all devices. Interactive elements include hover states for user engagement. Additionally, the contact form provide validation, displaying specific error messages if the Name, Email Address, or Message fields are empty or if the Email Address is incorrectly formatted.",
         html: "https://taylorcs827designo.netlify.app"
