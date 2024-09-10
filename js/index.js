@@ -41,7 +41,6 @@ if (window.location.pathname.includes('portfolio-item.html')) {
                         <a href="${project.html}" target="_blank" rel="noopener noreferrer" class="project-link">Visit Project</a>
                     </div>
                     <div class="project-image">
-                        
                         <img src="${project.imgDetails}" alt="${project.title}">
                     </div>
                 </div>

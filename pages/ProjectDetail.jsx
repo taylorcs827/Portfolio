@@ -19,7 +19,17 @@ export default function ProjectDetail() {
                 <img src={project.imgDetails} alt={project.title} className="intro__img" />
                 <p className="section__subtitle section__subtitle--intro">{project.descriptionIntro}</p>
             </section>
-            <p className="section__details">{project.descriptionDetails}</p>
+            <div className="details-link-container">
+                <p className="section__details">{project.descriptionDetails}</p>
+                <a
+                    href={project.html}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                >
+                    Visit Project
+                </a>
+            </div>
         </div>
-    );
+    );    
 }

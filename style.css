@@ -45,7 +45,7 @@
 
 
 body {
-    background: var(--clr-light);
+    background: var(--clr-light-beige);
     color: var(--clr-dark);
     margin: 0;
     font-family: var(--ff-primary);
@@ -54,7 +54,7 @@ body {
 }
 
 section {
-    padding: 5em 2em;
+    padding: 1em 2em;
 }
 
 img {
@@ -126,6 +126,7 @@ h3 { font-size: var(--fs-h3) }
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
+    
 }
 
 .section__subtitle--work {
@@ -341,7 +342,8 @@ header {
 
 
 .about-me,
-.section__details {
+.section__details,
+.project-link {
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -462,8 +464,45 @@ header {
     margin: 0 auto;
 }
 
-.project-detail p {
+.project-detail p  {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.details-link-container {
+    display: block; /* Default to block layout */
+    text-align: center; /* Left-align the content */
+    margin-top: 1em;
+}
+
+.section__details {
+    margin-bottom: 1em; /* Add space between the description and the link */
+    max-width: 600px;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    background-color: var(--clr-gray);
+    color: var(--clr-dark);
+    text-decoration: none;
+    font-weight: var(--fw-bold);
+    text-transform: uppercase;
+    transition: transform 200ms ease-in-out;
+}
+
+.project-link:hover {
+    transform: scale(1.05);
+}
+
+/* Media query to keep link behavior responsive */
+@media (max-width: 600px) {
+    .details-link-container {
+        text-align: left; /* This will ensure alignment is consistent */
+    }
+
+    .project-link {
+        margin-top: 1em; /* Add margin to the top for better spacing */
+    }
 }

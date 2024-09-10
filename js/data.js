@@ -41,7 +41,7 @@ export const projects = {
         subtitle: "Scissors Game",
         img: "/img/rockpaperscissors.jpeg",
         imgDetails: "/img/rockpaperscissors_detail.jpeg",
-        descriptionIntro: "ROCK PAPER SCISSORS SHOOT!",
+        descriptionIntro: "JavaScript Based Game",
         descriptionDetails: "A JavaScript-based Rock Paper Scissors game with interactive UI. The game includes player and house choices, score tracking, and modal rules. It features dynamic choice display, result evaluation, and a scoring system with play-again functionality.",
         html: "https://taylorcs827rps.netlify.app"
 
