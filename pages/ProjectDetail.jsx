@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom'; // Get the project id from the URL
-import { projects } from '../js/Data.js'; // Import the projects data
+import { projects } from '../js/Data'; // Import the projects data
 
 export default function ProjectDetail() {
     const { id } = useParams(); // Extract the id from the URL
