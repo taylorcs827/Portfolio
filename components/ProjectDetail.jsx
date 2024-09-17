@@ -16,11 +16,12 @@ export default function ProjectDetail() {
                 <h1 className="section__title section__title--intro">
                     {project.title} <strong>{project.subtitle}</strong>
                 </h1>
-                <img src={project.imgDetails} alt={project.title} className="intro__img" />
+                <img src={project.img} alt={project.title} className="intro__img" />
                 <p className="section__subtitle section__subtitle--intro">{project.descriptionIntro}</p>
             </section>
             <div className="details-link-container">
                 <p className="section__details">{project.descriptionDetails}</p>
+                <img src={project.imgDetails} alt={project.title} className="project-details-img"/>
                 <a
                     href={project.html}
                     target="_blank"

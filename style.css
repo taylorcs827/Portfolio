@@ -472,13 +472,19 @@ header {
 }
 
 .details-link-container {
-    display: block; /* Default to block layout */
-    text-align: center; /* Left-align the content */
+    display: block; 
+    text-align: left; 
     margin-top: 1em;
 }
 
+.project-detail-img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    margin: 2em auto;
+}
+
 .section__details {
-    margin-bottom: 1em; /* Add space between the description and the link */
+    margin-bottom: 1em;
     max-width: 600px;
 }
 
@@ -491,6 +497,7 @@ header {
     font-weight: var(--fw-bold);
     text-transform: uppercase;
     transition: transform 200ms ease-in-out;
+    margin: 1em 0;
 }
 
 .project-link:hover {
@@ -498,10 +505,17 @@ header {
 }
 
 /* Media query to keep link behavior responsive */
-@media (max-width: 600px) {
-    .section__subtitle section__subtitle--intro
-    .details-link-container {
-        text-align: left; /* This will ensure alignment is consistent */
+@media (min-width: 600px) {
+    .section__subtitle {
+        text-align: right;
+    }
+
+    .details-link-container { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .project-link {
