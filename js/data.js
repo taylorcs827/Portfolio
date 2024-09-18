@@ -46,15 +46,15 @@ export const projects = {
         html: "https://taylorcs827rps.netlify.app"
 
     },
-    // 6: {
-    //     title: "Real Estate Agency",
-    //     subtitle: "A Real Estate Agency Website",
-    //     img: "img/rockpaaperscissors.jpeg",
-    //     imgDetails: "img/r.jpg",
-    //     descriptionIntro: "A real estate agency website...",
-    //     descriptionDetails: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam, quia voluptas? Doloribus, reprehenderit ex! Quisquam, modi, neque rerum expedita quo?",
-    //     html: "https://taylorcs827realestateagency.netlify.app"
+    6: {
+        title: "Twimba",
+        subtitle: "Twitter Clone",
+        img: "/img/twimba.png",
+        imgDetails: "/img/twimba-details.png",
+        descriptionIntro: "Simple JavaScript Based Twitter",
+        descriptionDetails: "Twimba is a Twitter-inspired web application that allows users to post tweets, like, retweet, and reply to posts. Built using HTML, CSS, and JavaScript, this project demonstrates my ability to create dynamic, interactive interfaces. Key features include real-time tweet posting, interactive icons for likes and retweets, and a responsive design that works seamlessly across devices. Through Twimba, I gained hands-on experience with DOM manipulation, event handling, and state management in JavaScript, while applying modern web development practices.",
+        html: "https://taylorcs827realestateagency.netlify.app"
 
-    // }
+    }
     // Add more projects as needed
 };
