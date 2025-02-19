@@ -8,7 +8,7 @@ function App() {
         <Router>
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/work/:id" element={<Project />} /> {/* This must match the URL structure */}
+                <Route path="/work/:id" element={<Project />} />
             </Routes>
         </Router>
     );
