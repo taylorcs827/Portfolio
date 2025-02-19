@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-/* Custom Properties, update these for your own design */
-
 :root {
     --ff-primary: 'Lora', serif;
     --ff-secondary: 'Roboto Slab', serif;
@@ -37,11 +35,9 @@
 }
 
 /* General styles */
-
-/* endable this to add smooth scrolling */
-/* html {
+ html {
     scroll-behavior: smooth;
-} */
+}
 
 
 body {
@@ -51,6 +47,7 @@ body {
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
+    text-align: center;
 }
 
 section {
@@ -125,8 +122,7 @@ h3 { font-size: var(--fs-h3) }
     background: var(--clr-gray);
     padding: .25em 1em;
     font-family: var(--ff-secondary);
-    margin-bottom: 1em;
-    
+    margin-bottom: 1em
 }
 
 .section__subtitle--work {
@@ -156,7 +152,6 @@ header {
     left: 0;
     right: 0;
     z-index: 100;
-    
     transform: translateX(100%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
@@ -353,7 +348,6 @@ header {
 .my-work {
     background-color: var(--clr-dark);
     color: var(--clr-light);
-    text-align: center;    
 }
 
 .portfolio {
@@ -362,7 +356,6 @@ header {
 }
 
 .portfolio__item {
-    
     overflow: hidden;
     display: flex; 
     align-items: center;
@@ -507,7 +500,7 @@ header {
 /* Media query to keep link behavior responsive */
 @media (min-width: 600px) {
     .section__subtitle {
-        text-align: right;
+        text-align: center;
     }
 
     .details-link-container { 
